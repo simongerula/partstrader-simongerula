@@ -1,5 +1,5 @@
 # Automation test - PartsTrader
-This repository contains automated tests cases for https://opensource-demo.orangehrmlive.com/.
+This repository contains automated tests cases for https://opensource-demo.orangehrmlive.com/
 
 ---
 
@@ -56,7 +56,7 @@ This repository contains the following test suites:
    `$ npm run cy:open`
 
 4. To run the test through the console
-  - Run login tests
+  - Run Login tests
    `$ npm run cy:test:login`
   - Run Recruitment tests
     `$ npm run cy:test:recruitment`
@@ -67,8 +67,6 @@ This repository contains the following test suites:
 
 ---
 
-This framework was created with Cypress 13.6
-It uses cypress-mochawesome-reporter to generate HTML reports
-The design is based in Page Object Model
+This framework was created with Cypress 13.6, cypress-mochawesome-reporter to generate HTML reports and based in Page Object Model.
 
 Simon Gerula
