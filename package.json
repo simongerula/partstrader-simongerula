@@ -1,0 +1,14 @@
+{
+  "name": "partstrader-simongerula",
+  "version": "1.0.0",
+  "description": "Automation test for PartsTrader by Simon Gerula",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simon Gerula",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
