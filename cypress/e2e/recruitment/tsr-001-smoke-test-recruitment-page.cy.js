@@ -30,19 +30,19 @@ describe('TSR-001 : Smoke Test Recruitment Page', () => {
         })
     })
 
-    it('TCR-002 : The button "+ Add" redirects the user to the Add Candidate form', () => {
+    it('TCR-002 : The "+ Add" button redirects the user to the Add Candidate form', () => {
         cy.visit('/recruitment/viewCandidates')
         RecruitmentPage.clickAddCandidateButton()
         cy.isLocatedAt('/recruitment/addCandidate')
     })
 
-    it('TCR-003 : The user click on the eye action icon and is redirected to the candidate detail page', () => {
+    it('TCR-003 : The user clicks on the eye action icon and is redirected to the candidate detail page', () => {
         cy.visit('/recruitment/viewCandidates')
         RecruitmentPage.clickEyeActionButton()
         cy.isLocatedAtDinamic('/recruitment/addCandidate/')
     })
 
-    it('TCR-004 : The user click on the delete action icon and a pop-up is displayed', () => {
+    it('TCR-004 : The user clicks on the delete action icon and a pop-up is displayed', () => {
         cy.visit('/recruitment/viewCandidates')
         RecruitmentPage.clickDeleteActionButton()
         RecruitmentPage.isDeletePopUpBody('The selected record will be permanently deleted. Are you sure you want to continue?')
@@ -62,7 +62,7 @@ describe('TSR-001 : Smoke Test Recruitment Page', () => {
         })
     })
 
-    it('TCR-006 : The user click on the download action icon and a .PDF file is downloaded', () => {
+    it('TCR-006 : The user clicks on the download action icon and a .PDF file is downloaded', () => {
         cy.intercept('GET', (Cypress.env('backend_url')+'/recruitment/candidates?*')).as('getCandidates')
         cy.visit('/recruitment/viewCandidates')
         //RecruitmentPage.clickDownloadActionButton()

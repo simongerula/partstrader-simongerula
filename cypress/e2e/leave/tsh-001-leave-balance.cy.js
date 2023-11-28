@@ -7,7 +7,6 @@ import LeavePage from "../../support/pages/leavePage"
 
 // Test-data Import
 import credentials from '../../fixtures/credentials.json'
-import { interfaces } from "mocha"
 
 describe('TSH-001 : Leave Balance', () => {
 
