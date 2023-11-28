@@ -5,7 +5,7 @@ This repository contains automated tests cases for https://opensource-demo.orang
 
 ### Test Suites
 
-This repository contains the following test suites:
+The tests consist of three test suites where UI tests and integration tests between the UI and the backend response can be verified.
 
 1. TSL-001 : Auth Login
     - TCL-001 : Successful login and navigation to the Recruitment page
