@@ -1,0 +1,48 @@
+{
+    "data": {
+        "negative": true,
+        "breakdown": [
+            {
+                "period": {
+                    "startDate": "2023-01-01",
+                    "endDate": "2023-12-31"
+                },
+                "balance": {
+                    "entitled": 0,
+                    "used": 0,
+                    "scheduled": 0,
+                    "pending": 0,
+                    "taken": 0,
+                    "balance": 0,
+                    "asAtDate": "2023-11-29",
+                    "endDate": "2023-12-31"
+                },
+                "leaves": [
+                    {
+                        "balance": -1,
+                        "date": "2023-11-29",
+                        "length": 1,
+                        "status": null
+                    }
+                ]
+            }
+        ]
+    },
+    "meta": {
+        "employee": {
+            "empNumber": 3,
+            "lastName": "Anderson",
+            "firstName": "Peter",
+            "middleName": "Mac",
+            "employeeId": "0007",
+            "terminationId": null
+        },
+        "leaveType": {
+            "id": 9,
+            "name": "CAN - Personal",
+            "deleted": false,
+            "situational": false
+        }
+    },
+    "rels": []
+}

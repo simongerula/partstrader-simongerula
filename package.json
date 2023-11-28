@@ -4,11 +4,18 @@
   "description": "Automation test for PartsTrader by Simon Gerula",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+
+    "cy:test:login": "cypress run --spec './cypress/e2e/login/*' --reporter-options reportFilename=login-report_[status]_[datetime],timestamp=isoDate,overwrite=false",
+    "cy:test:recruitment": "cypress run --spec './cypress/e2e/recruitment/*' --reporter-options reportFilename=recruitment-report_[status]_[datetime],timestamp=isoDate,overwrite=false",
+    "cy:test:leave": "cypress run --spec './cypress/e2e/leave/*' --reporter-options reportFilename=leave-report_[status]_[datetime],timestamp=isoDate,overwrite=false",
+
+    "cy:regression": "npm run cy:test:login  ; npm run cy:test:recruitment ; npm run cy:test:leave" 
   },
   "author": "Simon Gerula",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.0"
+    "cypress": "^13.6.0",
+    "cypress-mochawesome-reporter": "^3.7.0"
   }
 }
