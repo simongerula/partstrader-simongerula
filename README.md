@@ -6,6 +6,7 @@ This repository contains automated tests cases for https://opensource-demo.orang
 ### Test Suites
 
 The tests consist of three test suites where UI tests and integration tests between the UI and the backend response can be verified.
+The framework incorporates reusable methods , enabling the reuse of functions across various test suites.  It utilizes sessions to enhance test speed and fixtures for managing external data. Additionally, fixtures can be employed for looping through different sets of data.
 
 1. TSL-001 : Auth Login
     - TCL-001 : Successful login and navigation to the Recruitment page
